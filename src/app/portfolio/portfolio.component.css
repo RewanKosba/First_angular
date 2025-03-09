@@ -1,0 +1,97 @@
+.portfolio {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 45px;
+  text-shadow: 2px 2px 4px gray;
+  margin-left: 20px;
+  font-family: serif;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 50px;
+}
+
+.card-item {
+  margin: 10px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  transition: transform 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+}
+
+.card-item span {
+  height: 2px;
+  width: 70px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+.web-design {
+  background-color: #959188;
+}
+
+.mobile-design {
+  background-color: #3d3d3d;
+}
+
+.logo-design {
+  background-color: #959188;
+}
+
+.web-application {
+  background-color: #3d3d3d;
+}
+
+.mobile-application {
+  background-color: #959188;
+}
+
+.pwa-development {
+  background-color: #3d3d3d;
+}
+
+@media (min-width: 768px) {
+  h1 {
+      font-size: 65px;
+      margin-left: 100px;
+      text-align: left;
+  }
+
+  .card-item {
+      margin: 20px;
+      flex: 1 0 300px;
+      max-width: 350px;
+      height: 250px;
+      font-size: 18px;
+  }
+
+  .card-item span {
+      width: 90px;
+      bottom: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cards {
+      margin-left: 250px;
+  }
+}
+
+

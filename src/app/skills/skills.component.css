@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.skills {
+    padding: 100px 20px;
+    background-color: #3d3d3d;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.skills h1 {
+    font-size: 45px;
+    text-shadow: 2px 2px 4px gray;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+
+.skills p {
+    font-size: 18px;
+    color: darkgray;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.first {
+    margin-top: 50px;
+}
+
+.first h2 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    font-weight: normal;
+    color: rgb(227, 225, 225);
+    display: inline-block;
+}
+
+.first h2::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: rgb(227, 225, 225);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.first li {
+    color: rgb(227, 225, 225);
+    padding: 10px;
+}
+
+.progress {
+    height: 30px;
+    border-radius: 0;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+
+.progress span {
+    text-align: center;
+    padding: 5px;
+    background-color: gray;
+    width: 100px;
+    height: 100%;
+    line-height: 2;
+}
+
+.progress-bar {
+    background-color: #d4d4d4;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+}
+
+.progress-col {
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .skills {
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+
+    .skills h1 {
+        font-size: 65px;
+    }
+
+    .skills p {
+        font-size: 20px;
+    }
+
+    .progress-col {
+        margin-top: 0;
+    }
+}

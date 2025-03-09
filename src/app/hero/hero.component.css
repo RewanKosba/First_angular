@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.hero {
+    background-image: url(../../../public/images/6_Verdades_Ruptura-min.jpg);
+    background-size: cover;
+    height: 100vh;
+    filter: grayscale(1);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.content {
+    color: white;
+    z-index: 100;
+    padding-top: 0px;
+    padding-left: 150px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 85px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 40px;
+    margin: 10px -20px !important;
+}
+
+button {
+    display: inline-block;
+    margin-top: 50px !important;
+    margin-left: 120px !important;
+    padding: 5px 20px !important;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+@media (max-width: 1024px) {
+    .content {
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    button {
+        margin-left: 0 !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        padding-top: 150px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 24px;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px 15px;
+        margin-top: 30px !important;
+    }
+}
